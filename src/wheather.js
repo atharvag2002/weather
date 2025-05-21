@@ -9,7 +9,7 @@ function Weather() {
     if (!city.trim()) return;
 
     const API_KEY = "a1cb81e8491045e99e5145044250601";
-    const url =` https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`;
+    const url =`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${city}`;
 
     try {
       const response = await fetch(url);
